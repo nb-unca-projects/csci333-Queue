@@ -2,28 +2,30 @@
 #include <list>
 #include <assert.h>
 
-using namespace std;
-
 Queue::Queue() {
-  q = new list<int>;
+  q = new std::list<int>;
 }
 
 Queue::~Queue(){
-  
+ 
 }
 
 void Queue::enqueue(int value) {
-  q->push_back(value);
+  q->list::push_back(value);
 }
 
 int Queue::dequeue() {
   assert(!q->empty());
   int temp;
-  temp = q->front();
-  q->pop_front();
+  temp = q->list::front();
+  q->list::pop_front();
   return temp;
 }
 
+int Queue::size() {
+  return q->list::size();
+}
+
 bool Queue::isEmpty() {
-  return q->empty();
+  return q->list::empty();
 }
