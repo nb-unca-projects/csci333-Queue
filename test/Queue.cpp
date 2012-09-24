@@ -15,7 +15,7 @@ TEST(QueueTest, dequeue) {
   q->enqueue(10);
   q->enqueue(15);
 
-  EXPECT_EQ(5, q->dequeue());
+  EXPECT_EQ(5, q->dequeue()); 
   delete q;
 }
 
