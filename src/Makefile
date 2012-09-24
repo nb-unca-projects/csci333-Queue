@@ -8,4 +8,5 @@ Queue.o: $(SRC)/Queue.h $(SRC)/Queue.cpp
 
 clean:
 	rm -f $(SRC)/*.o
+	rm -f *.o
 	rm -f *~
