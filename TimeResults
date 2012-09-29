@@ -1,0 +1,11 @@
+Time Results for the three different implementations of a queue
+
+Enqueue-ing 9,999,998 integers
+List: 1.06 s
+Array: 0.54 s
+LinkedList: 0.76 s
+
+Enqueue-ing then dequeue-ing 9,999,998 integers
+List: 1.97s
+Array: 0.79s
+LinkedList: 1.48s
