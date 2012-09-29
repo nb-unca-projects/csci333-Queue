@@ -1,7 +1,7 @@
 BUILD = ../build
 TEST = ../test
 LIB = ../lib
-SRC = ../src/LQueue
+SRC = ../src/LLQueue
 GTEST = $(LIB)/gtest-1.6.0
 GTEST_MAINA = $(GTEST)/make/gtest_main.a
 

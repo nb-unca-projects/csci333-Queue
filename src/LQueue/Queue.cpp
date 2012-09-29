@@ -7,7 +7,7 @@ Queue::Queue() {
 }
 
 Queue::~Queue(){
- 
+  delete q; 
 }
 
 void Queue::enqueue(int value) {
@@ -22,7 +22,7 @@ int Queue::dequeue() {
   return temp;
 }
 
-int Queue::size() {
+int Queue::queueSize() {
   return q->list::size();
 }
 

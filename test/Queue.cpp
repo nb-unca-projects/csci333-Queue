@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "../src/LQueue/Queue.h"
+#include "../src/LLQueue/Queue.h"
 
 TEST(QueueTest, enqueue) {
   Queue* q = new Queue();
@@ -14,7 +14,7 @@ TEST(QueueTest, dequeue) {
   q->enqueue(5);
   q->enqueue(10);
   q->enqueue(15);
-
+  
   EXPECT_EQ(5, q->dequeue()); 
   delete q;
 }
@@ -22,9 +22,17 @@ TEST(QueueTest, dequeue) {
 TEST(QueueTest, size) {
   Queue* q = new Queue();
   q->enqueue(10);
+  q->enqueue(5); 
   q->enqueue(5);
-
-  EXPECT_EQ(2, q->size());
+  q->enqueue(5);
+  q->enqueue(5);
+  q->enqueue(5);
+  q->enqueue(5);
+  q->enqueue(5);
+  q->enqueue(5);
+  q->enqueue(5);
+  q->enqueue(5);
+  EXPECT_EQ(11, q->queueSize());
   delete q;
   
 }
